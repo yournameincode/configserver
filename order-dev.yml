@@ -1,2 +1,14 @@
 server:
   port: 8810
+
+eureka:
+  client:
+    instance:
+      instance-id: order
+      prefer-ip-address: true
+
+info:
+    app.name: order
+    company.name: com.wys
+    build.artifactId: $project.artifactId$
+    build.version: $project.version$

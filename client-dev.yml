@@ -1,14 +1,21 @@
 server:
-  port: 8810
-
+  port: 8811
+spring:
+  application:
+    name: client
+  thymeleaf:
+    prefix: classpath:/static/
+    suffix: .html
+#thymeleaf 默认会去类路径下的template文件夹下面寻找以html结尾的文件
+#而静态资源默认位置都是在类路径（static是其中一个），而template不在其中所以讲静态文件全部放在static中方便渲染
 eureka:
   client:
     instance:
-      instance-id: order
+      instance-id: client
       prefer-ip-address: true
 
 info:
-    app.name: order
+    app.name: client
     company.name: com.wys
     build.artifactId: $project.artifactId$
     build.version: $project.version$

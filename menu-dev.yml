@@ -14,6 +14,10 @@ eureka:
       instance-id: menu
       prefer-ip-address: true
 
+mybatis:
+  mapper-locations: classpath:/mapping/*.xml
+  type-aliases-package: com.wys.entity
+
 info:
     app.name: menu
     company.name: com.wys

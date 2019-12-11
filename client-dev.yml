@@ -13,6 +13,9 @@ eureka:
     instance:
       instance-id: client
       prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
 
 info:
     app.name: client

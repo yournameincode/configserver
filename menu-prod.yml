@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: menu01
+    name: menu
   datasource:
     url: jdbc:mysql://localhost:3306/orderingsystem?serverTimezone=UTC
     username: root
@@ -21,11 +21,11 @@ spring:
 eureka:
   client:
     instance:
-      instance-id: menu01
+      instance-id: menu
       prefer-ip-address: true
 #eureka的客服端配置
 info:
-    app.name: menu01
+    app.name: menu
     company.name: com.wys
     build.artifactId: $project.artifactId$
     build.version: $project.version$
@@ -34,3 +34,5 @@ mybatis:
   mapper-locations: classpath:/mapping/*.xml
   type-aliases-package: com.wys.entity
 #mybatis指定mapper文件的位置和包别名
+
+

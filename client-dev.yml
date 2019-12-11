@@ -17,11 +17,7 @@ feign:
   hystrix:
     enabled: true
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+
 info:
     app.name: client
     company.name: com.wys

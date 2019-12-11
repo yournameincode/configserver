@@ -9,7 +9,10 @@ eureka:
       instance-id: zuul
       prefer-ip-address: true
 
-
+zuul:
+  routes:
+    serviceId: client
+    path: /wys/**
 
 info:
     app.name: order

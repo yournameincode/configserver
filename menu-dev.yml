@@ -34,3 +34,10 @@ mybatis:
   mapper-locations: classpath:/mapping/*.xml
   type-aliases-package: com.wys.entity
 #mybatis指定mapper文件的位置和包别名
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

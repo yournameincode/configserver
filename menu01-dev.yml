@@ -1,0 +1,36 @@
+server:
+  port: 8818
+
+spring:
+  application:
+    name: menu01
+  datasource:
+    url: jdbc:mysql://localhost:3306/orderingsystem?serverTimezone=UTC
+    username: root
+    password: w2453928297
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+
+#数据库连接资源
+
+eureka:
+  client:
+    instance:
+      instance-id: menu01
+      prefer-ip-address: true
+#eureka的客服端配置
+info:
+    app.name: menu01
+    company.name: com.wys
+    build.artifactId: $project.artifactId$
+    build.version: $project.version$
+#actuator配置服务的info
+mybatis:
+  mapper-locations: classpath:/mapping/*.xml
+  type-aliases-package: com.wys.entity
+#mybatis指定mapper文件的位置和包别名
